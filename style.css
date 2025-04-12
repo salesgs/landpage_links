@@ -30,12 +30,12 @@ body {
 
 .box {
   border: solid 1px black;
-  height: 200px;
+  height: 250px;
 }
 
 .navbar {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 200px;
   width: 100vw;
@@ -45,9 +45,9 @@ body {
   display: flex;
   justify-content: space-around;
   /* border: solid 1px black; */
-  gap: 1rem;
+  gap: 2rem;
   list-style: none;
-  width: 50vw;
+  width: 100vw;
   flex-wrap: wrap;
 }
 
@@ -74,16 +74,18 @@ body {
 }
 
 .sidebar {
-  height: 190px;
+  height: 200px;
   width: 300px;
   display: flex;
-  display: none;
 }
-
+#link-1, #link-2, #link-3, #link-4 {
+  opacity: 0;
+}
 .container_button {
   height: 30px;
   width: 300px;
   display: flex;
+  opacity: 0;
   align-items: center;
   justify-content: flex-end;
 }
@@ -118,10 +120,11 @@ body {
   color: #7e7f80;
   cursor: pointer;
 }
-.sidebar a:active{
+
+.sidebar a:active {
   opacity: 0.7;
   color: #fff;
- }
+}
 
 .box.main {
   flex-grow: 1;
@@ -130,6 +133,55 @@ body {
 /* .box.footer{
 
 } */
+.navbar__links a,
+.sidebar a,
+.container_button a {
+  transition: all 0.3s ease;
+}
+
+.link {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.link.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease forwards;
+}
+
 @media screen and (max-width:600px) {
   .navbar {
     justify-content: flex-end;
@@ -140,10 +192,13 @@ body {
   }
 
   .sidebar {
-    display: flex;
     align-items: flex-end;
     flex-direction: column;
     justify-content: space-evenly;
     margin: 10px;
+  }
+
+  .container_button {
+    opacity: 1;
   }
 }
