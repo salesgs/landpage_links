@@ -79,7 +79,7 @@ body {
 }
 
 .sidebar a {
-  margin-right: 1rem;
+  margin-right: "10%";
   text-decoration: none;
   list-style: none;
   color: #fff;
