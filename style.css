@@ -7,42 +7,52 @@ Cores:
 #06e9fa
 #093c60
 */
-*{
+* {
   margin: 0;
+  padding: 0;
 }
-body{
-  background: linear-gradient(
-    200deg,
-    #0d1b2a 0%,
-    #102132 30%,
-    #093c60 60%,
-    #225357 100%
-  );
+
+body {
+  background: linear-gradient(200deg,
+      #0d1b2a 0%,
+      #0c1926 30%,
+      #102132 40%,
+      #093c60 60%,
+      #174c72 80%,
+      #225357 100%);
 }
-.container{
- height: 100vh;
- display: flex;
- flex-direction:column;
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-.box{
- border: solid 1px black;
- height: 120px;
+
+.box {
+  border: solid 1px black;
+  height: 180px;
 }
-.navbar{
+
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 30vh;
+  width: 100vw;
+  /* background-color: #093c60; */
 }
-.navbar__links{
+
+.navbar__links {
   display: flex;
   justify-content: space-around;
-  border: solid 1px black;
+  /* border: solid 1px black; */
+  gap: 1rem;
   list-style: none;
   width: 80vw;
   flex-wrap: wrap;
 }
-.navbar__links a{
+
+.navbar__links a {
   text-decoration: none;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -50,12 +60,56 @@ body{
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
-  "wdth" 100;
+    "wdth" 100;
   font-size: 1.2rem;
 }
-.box.main{
- flex-grow: 1;
+
+.navbar__links a:hover {
+  color: #cdcdcd;
 }
+
+.sidebar {
+  height: 170px;
+  width: 300px;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.sidebar a {
+  margin-right: 1rem;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 1.2rem;
+}
+
+.sidebar a:hover {
+  color: #cdcdcd;
+}
+
+.box.main {
+  flex-grow: 1;
+}
+
 /* .box.footer{
 
 } */
+@media screen and (max-width:600px) {
+
+  .navbar__links {
+    display: none;
+  }
+
+  .sidebar {
+    display: flex;
+  }
+}
