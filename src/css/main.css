@@ -29,6 +29,7 @@
   min-height: 400px;
   display: flex;
   justify-content: right;
+  padding-right: 5px;
   /* background-color: #ff0000; */
 }
 /* #viagante-nomade-9{
