@@ -24,6 +24,7 @@ body {
 
 .container {
   height: 100vh;
+  
   display: flex;
   flex-direction: column;
 }
@@ -37,8 +38,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  /* height: 200px; */
   width: 100vw;
+
+
 }
 
 .navbar__links {
@@ -47,8 +50,9 @@ body {
   /* border: solid 1px black; */
   gap: 2rem;
   list-style: none;
-  width: 100vw;
-  flex-wrap: wrap;
+  width: 100%;
+  flex-wrap: wrap; 
+ 
 }
 
 .navbar__links a {
@@ -60,6 +64,10 @@ body {
   font-variation-settings:
     "wdth" 100;
   font-size: 1.2rem;
+  border: 1px solid;
+  padding: 12px;
+  border-radius: 4px;
+
 }
 
 .navbar__links a:hover {
@@ -91,7 +99,7 @@ body {
 }
 
 .container_button a {
-  margin-left: 10px;
+  /* margin-left: 10px; */
   text-decoration: none;
   list-style: none;
   color: #fff;
@@ -127,12 +135,10 @@ body {
 }
 
 .box.main {
-  flex-grow: 1;
+  min-height: 60vh;
 }
 
-/* .box.footer{
 
-} */
 .navbar__links a,
 .sidebar a,
 .container_button a {
@@ -180,25 +186,4 @@ body {
 
 .fade-out {
   animation: fadeOut 0.3s ease forwards;
-}
-
-@media screen and (max-width:600px) {
-  .navbar {
-    justify-content: flex-end;
-  }
-
-  .navbar__links {
-    display: none;
-  }
-
-  .sidebar {
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 10px;
-  }
-
-  .container_button {
-    opacity: 1;
-  }
 }

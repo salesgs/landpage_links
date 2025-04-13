@@ -1,0 +1,12 @@
+.main .main__section-one{
+   display:flex; 
+   justify-content: space-around;
+ 
+}
+#viagante-nomade-9{
+  margin-right: 4rem;
+}
+.main .main__section-two{
+  display: flex;
+  justify-content: flex-end;
+}
