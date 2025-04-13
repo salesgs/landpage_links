@@ -1,0 +1,29 @@
+@media screen and (max-width:860px){
+    .main__section-one .text-section-one{
+      width: 85%;
+      min-height: 300px;
+      margin: 0 !important;
+    }
+    .main__section-one .img-section-one {
+        width: 100%;
+      min-height: 300px;
+    }
+    
+    .main .main__section-one{
+         display:flex; 
+         flex-direction: column;
+         justify-content: center;
+         align-items: flex-start;
+      }
+      .text-section-one{
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+        min-height: 400px;
+       }
+       .img-section-one{
+        min-height: 400px;
+        display: flex;
+        padding-right: 15px; 
+      }
+}
