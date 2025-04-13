@@ -44,7 +44,10 @@
     align-items: flex-end;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 10px;
+    margin: 20px;
+  }
+  .sidebar a{
+    font-size: 0.875rem;
   }
 
   .container_button {

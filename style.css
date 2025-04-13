@@ -20,6 +20,7 @@ body {
       #093c60 60%,
       #174c72 80%,
       #225357 100%);
+      background-attachment: fixed;
 }
 
 .container {
