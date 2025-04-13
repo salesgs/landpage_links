@@ -34,7 +34,7 @@
 @media screen and (max-width:600px) {
   .navbar {
     justify-content: flex-end;
-    height: 170px;
+    height: 200px;
   }
 
   .navbar__links {
@@ -53,7 +53,7 @@
   }
 
   .container_button {
-    margin-top: 30px;
+    margin-top: 10px;
     opacity: 1;
   }
 }

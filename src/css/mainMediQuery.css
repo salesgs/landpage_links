@@ -1,12 +1,12 @@
 @media screen and (max-width:860px){
     .main__section-one .text-section-one{
       width: 85%;
-      min-height: 300px;
+      min-height: 400px;
       margin: 0 !important;
     }
     .main__section-one .img-section-one {
         width: 100%;
-      min-height: 300px;
+      min-height: 400px;
     }
     
     .main .main__section-one{
