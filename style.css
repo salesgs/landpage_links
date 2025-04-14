@@ -47,7 +47,14 @@ body {
     filter: contrast(16) brightness(3.5);
   }
 }
-body::before {
+.container {
+  min-height: 100dvh;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.container::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -61,8 +68,7 @@ body::before {
   animation: electricPulse 5s ease-in-out infinite;
   filter: contrast(10) brightness(2);
 }
-
-body::after {
+.container::after {
   content: "";
   position: fixed;
   inset: 0;
@@ -78,17 +84,10 @@ body::after {
   pointer-events: none;
   z-index: 0;
 }
-.container {
-  min-height: 100dvh;
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-}
-
 .box {
   /* border: solid 1px black; */
   height: 250px;
+  z-index: 2;
 }
 
 .navbar {

@@ -4,7 +4,7 @@ function observeSectionsFade() {
   const section3 = document.getElementById("section-3");
   const sections = [section1, section2,section3];
   const isSmallScreen = window.innerWidth <= 768;
-  const thresholdValue = isSmallScreen ? 0.3 : 0.7;
+  const thresholdValue = isSmallScreen ? 0.3 : 0.6;
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
