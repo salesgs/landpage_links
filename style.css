@@ -16,7 +16,13 @@ html, body {
   padding: 0;
   min-height: 100%;
   position: relative;
-  background-color: #0d1b2a;
+  background: linear-gradient(200deg,
+  #0d1b2a 0%,
+  #0c1926 30%,
+  #102132 40%,
+  #093c60 60%,
+  #174c72 80%,
+  #225357 100%);
 }
 
 body {
@@ -61,9 +67,9 @@ body::before {
   filter: contrast(10) brightness(2);
 }
 
-html::after {
+body::after {
   content: "";
-  position: fixed; 
+  position: fixed;
   inset: 0;
   background: linear-gradient(200deg,
       #0d1b2a 0%,
