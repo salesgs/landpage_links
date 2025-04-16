@@ -4,7 +4,10 @@
     min-height: 300px;
     margin: 0 !important;
   }
-
+  .main__section-box-text p{
+    margin-left: -1.2rem;
+  }
+  
   .main__section-one .img-section-one {
     width: 85%;
     min-height: 300px;

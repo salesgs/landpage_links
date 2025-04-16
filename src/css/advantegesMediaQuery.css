@@ -1,0 +1,26 @@
+@media screen and (max-width:860px){
+  .main__section-four{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+  }
+  .main__section-box-text{
+    align-items: center;
+    margin-bottom: 8px;
+    width: 400px;
+  }
+  
+}
+@media screen and (max-width:410px){
+  .main__section-box-images{
+    width: 280px;
+  }
+  .main__section-box-text{
+    width: 280px;
+  }
+  .main__section-box-text h3{
+    padding: 0.15rem;
+  }
+
+}

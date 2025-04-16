@@ -1,3 +1,6 @@
+.main{
+  height: auto;
+}
 .main .main__section-one {
   width: 100%;
   display: flex;
@@ -34,6 +37,7 @@
 .text-section-one p {
   color: #fff;
   font-size: clamp(1rem, 1.6vw, 5rem);
+  margin-left: 1rem;
 }
 
 .img-section-one {
@@ -116,7 +120,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} 
 
 .text-section-three h2 {
   color: #fff;
