@@ -191,7 +191,7 @@ body {
 }
 
 .box.main {
-  min-height: 500vh;
+  min-height: 530vh;
   display: flex;
   flex-direction: column;
   row-gap: 180px;
@@ -246,4 +246,14 @@ body {
 
 .fade-out {
   animation: fadeOut 0.3s ease forwards;
+}
+.box.footer{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #093c60;
+}
+.box.footer h4{
+  color: #fff;
+  font-size: clamp(1.0rem, 1.4vw, 2rem);
 }

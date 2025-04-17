@@ -85,7 +85,7 @@
 
 .text-section-two p {
   color: #fff;
-  font-size: clamp(1rem, 1.4vw, 5rem);
+  font-size: clamp(1rem, 1.6vw, 5rem);
 }
 
 .img-section-two {
@@ -148,7 +148,7 @@
 }
 .text-section-three p {
   color: #fff;
-  font-size: clamp(1rem, 1.4vw, 5rem);
+  font-size: clamp(1rem, 1.6vw, 5rem);
   margin-bottom: 10px;
 }
 
