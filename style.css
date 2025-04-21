@@ -191,7 +191,7 @@ body {
 }
 
 .box.main {
-  min-height: 530vh;
+  min-height: 650vh;
   display: flex;
   flex-direction: column;
   row-gap: 180px;
@@ -249,6 +249,7 @@ body {
 }
 .box.footer{
 width: 100%;
+height: 200px;
 display: flex;
 align-items: center;
 justify-content: center;

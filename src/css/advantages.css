@@ -13,10 +13,11 @@
 }
 .main__section-box-images{
  /* border: orange 1px solid ; */
- width: 400px;
+ width: 40%;
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
+
 }
 .main__section-box-images .main__section-box-default{
   width: 40%;
