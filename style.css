@@ -119,7 +119,7 @@ body {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  font-size: clamp(1.2rem, 1vw, 2rem);
+  font-size: clamp(1.2rem, 1.5vw, 3rem);
   border: 1px solid;
   padding: 12px;
   border-radius: 4px;
@@ -191,7 +191,7 @@ body {
 }
 
 .box.main {
-  min-height: 650vh;
+  min-height: 300vh;
   display: flex;
   flex-direction: column;
   row-gap: 180px;
@@ -248,8 +248,9 @@ body {
   animation: fadeOut 0.3s ease forwards;
 }
 .box.footer{
+  margin-top: 50px;
 width: 100%;
-height: 200px;
+height: 150px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -257,5 +258,5 @@ background-color: #093c60;
 }
 .box.footer h4{
   color: #fff;
-  font-size: clamp(1.0rem, 1.4vw, 2rem);
+  font-size: clamp(1.0rem, 1.4vw, 3rem);
 }
