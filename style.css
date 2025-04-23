@@ -86,8 +86,15 @@ body {
 }
 .box {
   /* border: solid 1px black; */
-  height: 250px;
+  height: 200px;
   z-index: 2;
+}
+.box header{
+  /* border: solid 1px black; */
+  position: fixed;
+  height: 250px;
+  width: 100%;
+  z-index: 999;
 }
 
 .navbar {
