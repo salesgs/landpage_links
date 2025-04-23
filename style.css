@@ -201,7 +201,7 @@ body {
   min-height: 300vh;
   display: flex;
   flex-direction: column;
-  row-gap: 180px;
+  row-gap: 80px;
   
 }
 
