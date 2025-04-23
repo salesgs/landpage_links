@@ -12,7 +12,7 @@ document.getElementById("buttonSidebar").onclick = () => {
       setTimeout(() => {
         link.classList.remove("fade-out");
         link.classList.add("fade-in");
-        navbar.style.backgroundColor = '#174c7260';
+        navbar.style.backgroundColor = ' rgba(9, 60, 96, 0.70)';
       }, index * 100);
     });
   } else {
