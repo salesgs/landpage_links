@@ -1,5 +1,5 @@
 let isopen = false;
-
+navbar =document.querySelector(".box header");
 document.getElementById("buttonSidebar").onclick = () => {
   const link1 = document.getElementById("link-1");
   const link2 = document.getElementById("link-2");
@@ -12,6 +12,7 @@ document.getElementById("buttonSidebar").onclick = () => {
       setTimeout(() => {
         link.classList.remove("fade-out");
         link.classList.add("fade-in");
+        navbar.style.backgroundColor = '#174c7260';
       }, index * 100);
     });
   } else {
@@ -19,6 +20,7 @@ document.getElementById("buttonSidebar").onclick = () => {
       setTimeout(() => {
         link.classList.remove("fade-in");
         link.classList.add("fade-out");
+        navbar.style.backgroundColor = '';
       }, index * 100);
     });
   }
