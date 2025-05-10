@@ -1,5 +1,5 @@
 let isopen = false;
-navbar =document.querySelector(".box header");
+navbar = document.querySelector(".box header");
 document.getElementById("buttonSidebar").onclick = () => {
   const link1 = document.getElementById("link-1");
   const link2 = document.getElementById("link-2");
@@ -12,7 +12,9 @@ document.getElementById("buttonSidebar").onclick = () => {
       setTimeout(() => {
         link.classList.remove("fade-out");
         link.classList.add("fade-in");
-        navbar.style.backgroundColor = ' rgba(9, 60, 96, 0.70)';
+        navbar.style.backgroundColor = 'rgba(37, 38, 40, 0.8)';
+        navbar.style.backdropFilter = 'blur(5px)';
+        navbar.style.borderBottom = '1px solid rgba(0, 191, 99, 0.5)';
       }, index * 100);
     });
   } else {
@@ -21,6 +23,9 @@ document.getElementById("buttonSidebar").onclick = () => {
         link.classList.remove("fade-in");
         link.classList.add("fade-out");
         navbar.style.backgroundColor = '';
+        navbar.style.backdropFilter = 'none';
+        navbar.style.webkitBackdropFilter = 'none';
+        navbar.style.borderBottom = 'none';
       }, index * 100);
     });
   }

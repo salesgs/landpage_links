@@ -5,6 +5,12 @@
     align-items: center;
     margin-top: -50px;
   }
+  .main__section_gif{
+   width: 95%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
   .main__section-box-text{
     align-items: center;
     margin-bottom: 8px;
@@ -13,9 +19,6 @@
   
 }
 @media screen and (max-width:410px){
-  .main__section-box-images{
-    width: 350px;
-  }
   .main__section-box-text{
     width: 280px;
   }

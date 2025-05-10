@@ -20,7 +20,7 @@
   width: 500px;
 }
 .section-courses-title h2{
-  color: #fff;
+  color: #00bf63;
   margin-bottom: 10px;
   font-size: clamp(2.0rem, 3.5vw, 7rem);
 }

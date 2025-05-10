@@ -9,7 +9,7 @@
   /* background-color: black; */
   opacity: 0;
   transform: translateY(30px);
-
+  box-shadow: 0 0 20px rgba(3, 3, 3, 0.2);
 }
 
 .main .main__section-one.fade-section {
@@ -30,7 +30,7 @@
 }
 
 .text-section-one h1 {
-  color: #fff;
+  color: #00bf63;
   font-size: clamp(2.5rem, 4vw, 7rem);
 }
 
@@ -79,7 +79,7 @@
 }
 
 .text-section-two h2 {
-  color: #fff;
+  color: #00bf63;
   font-size: clamp(2.0rem, 3.5vw, 7rem);
 }
 
@@ -123,7 +123,7 @@
 } 
 
 .text-section-three h2 {
-  color: #fff;
+  color: #00bf63;
   font-size: clamp(2.0rem, 3.5vw, 7rem);
 }
 .text-section-three h3 {
@@ -131,7 +131,7 @@
   font-size: clamp(1.0rem, 1.8vw, 5rem);
 }
 .numero {
-  color: #FF5733; 
+  color: #00bf63; 
 }
 
 .texto {
