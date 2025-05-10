@@ -30,13 +30,13 @@ function navbarColor() {
     else {
         if (!isPhone) {
             navbar.style.backgroundColor = '';
+            navbar.style.borderBottom = 'none';
         }
 
         navbar.style.height = isPhone ? "200px" : '200px';
         navbar.style.transition = '0.5s';
         navbar.style.backdropFilter = 'none';
         navbar.style.webkitBackdropFilter = 'none';
-        navbar.style.borderBottom = 'none';
     };
 };
 window.addEventListener('scroll', navbarColor);
