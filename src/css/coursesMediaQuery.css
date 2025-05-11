@@ -1,48 +1,56 @@
-@media screen and (max-width:860px){
-  .section-courses{
+@media screen and (max-width:860px) {
+  .section-courses {
     flex-direction: column;
     align-items: center;
   }
-  .section-courses-title{
+
+  .section-courses-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
   }
-  .section-courses-imgs{
+
+  .section-courses-imgs {
     flex-direction: column;
     width: 200px;
     align-items: center;
   }
 
 }
-@media screen and (max-width:460px){
 
-  .section-courses-title{
+@media screen and (max-width:460px) {
+
+  .section-courses-title {
 
     width: 280px;
   }
 }
-@media screen and (max-width:330px){
 
-  .section-courses-title{
+@media screen and (max-width:330px) {
+
+  .section-courses-title {
     width: 228px;
   }
 }
-@media screen and (min-width: 1920px){
-  .section-courses-title{
+
+@media screen and (min-width: 1920px) {
+  .section-courses-title {
 
     width: 40%;
   }
-  .section-courses-imgs{
+
+  .section-courses-imgs {
     width: 50%;
     align-items: center;
   }
-  .section-courses-imgs a img{
+
+  .section-courses-imgs a img {
     width: 300px;
     height: 300px;
   }
-  .section-courses-imgs a h4{
+
+  .section-courses-imgs a h4 {
     font-size: clamp(1.2rem, 1.5vw, 2rem);
   }
 }

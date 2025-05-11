@@ -29,7 +29,9 @@ body {
 }
 
 @keyframes electricPulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.9;
     transform: scale(1) skew(0deg, 0deg);
     filter: contrast(10.2) brightness(10.1);
@@ -97,13 +99,11 @@ body {
 }
 
 .box {
-  /* border: solid 1px black; */
   height: 200px;
   z-index: 2;
 }
 
 .box header {
-  /* border: solid 1px black; */
   position: fixed;
   height: 200px;
   width: 100%;
@@ -114,7 +114,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 200px; */
   width: 100%;
 
 
@@ -123,7 +122,6 @@ body {
 .navbar__links {
   display: flex;
   justify-content: space-around;
-  /* border: solid 1px black; */
   gap: 2rem;
   list-style: none;
   width: 100%;
@@ -180,7 +178,6 @@ body {
 }
 
 .container_button a {
-  /* margin-left: 10px; */
   text-decoration: none;
   list-style: none;
   color: #fff;

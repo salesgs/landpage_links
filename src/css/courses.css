@@ -1,4 +1,4 @@
-.section-courses{
+.section-courses {
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -6,59 +6,71 @@
   row-gap: 0.75rem;
   flex-wrap: wrap;
   opacity: 0;
-  padding: 1rem;  
+  padding: 1rem;
   transform: translateY(30px);
   margin-bottom: 80px;
+  box-shadow: 0 0 20px rgba(3, 3, 3, 0.2);
 }
-.main .section-courses.fade-section{
+
+.main .section-courses.fade-section {
   opacity: 1;
   transition: opacity 1s ease, transform 1s ease;
   transform: translateY(0);
 }
-.section-courses-title{
+
+.section-courses-title {
   padding-left: 2rem;
   width: 500px;
 }
-.section-courses-title h2{
+
+.section-courses-title h2 {
   color: #00bf63;
   margin-bottom: 10px;
   font-size: clamp(2.0rem, 3.5vw, 7rem);
 }
-.section-courses-title p{
+
+.section-courses-title p {
   color: #fff;
   font-size: clamp(1rem, 1.6vw, 5rem);
 }
-.section-courses-imgs{
+
+.section-courses-imgs {
   width: 600px;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 
 }
-.section-courses-imgs a{
+
+.section-courses-imgs a {
   text-decoration: none;
   color: #fff;
   text-align: center;
   transition-duration: 0.4s;
 }
-.section-courses-imgs a:hover{
+
+.section-courses-imgs a:hover {
   transition-duration: 0.4s;
   opacity: 0.7;
   color: #7e7f80;
   cursor: pointer;
-  transform: scale( 0.9);
+  transform: scale(0.9);
 }
+
 .section-courses-imgs a:active {
   opacity: 0.7;
   color: #fff;
 }
+
 .seta {
-  display: inline-block; /* NECESSÁRIO para que o transform funcione */
-  position: relative;    /* também ajuda no controle de movimento */
-  transition: transform 0.2s ease-in-out; /* deixa suave */
-  font-size: 50px; /* só pra garantir que fique visível */
+  display: inline-block;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+  /* deixa suave */
+  font-size: 50px;
 }
-#seta-2{
+
+#seta-2 {
   display: none;
   margin-bottom: 20px;
 }
